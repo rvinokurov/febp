@@ -43,8 +43,8 @@
     "validate:prod": "webpack-validator config/webpack.prod.js",
     "validate:dev": "webpack-validator config/webpack.dev.js",
     "validate": "npm-run-all --parallel validate:* lint",
-    "test:unit": "",
-    "test:e2e": "",
+    "test:unit": "karma",
+    "test:e2e": "protractor",
     "test": "npm-run-all test:*"
   },
   "engines": {
