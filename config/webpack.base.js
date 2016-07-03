@@ -1,13 +1,13 @@
 const webpack = require('webpack');
-const {PATHS, CONFIG} = require('./build');
+const {CONFIG, PATHS} = require('./build');
 
 const HtmlPlugin = require('html-webpack-plugin');
 const CleanPlugin = require('clean-webpack-plugin');
 const ChunkPlugin = webpack.optimize.CommonsChunkPlugin;
 const autoprefixer = require('autoprefixer');
 
-const {SRC, DIST, ROOT} = PATHS;
 const {PUBLIC_PATH} = CONFIG;
+const {SRC, DIST, ROOT} = PATHS;
 
 const cfg = {
 	context: SRC,
