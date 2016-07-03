@@ -11,7 +11,7 @@ const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 
 const {SRC} = PATHS;
 
-let cfg = {
+const cfg = {
 	watch: false,
 	cache: false,
 	debug: false,

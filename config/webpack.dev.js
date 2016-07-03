@@ -4,7 +4,7 @@ const {PATHS} = require('./build');
 
 const {SRC} = PATHS;
 
-let cfg = {
+const cfg = {
 	watch: true,
 	cache: true,
 	debug: true,

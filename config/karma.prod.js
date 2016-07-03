@@ -1,15 +1,11 @@
 const base = require('./karma.base');
 
-module.exports = config => {
+const cfg = Object.assign({}, base, {
+	browsers: ['Firefox'],
+	autoWatch: false,
+	singleRun: true
+});
 
-	const patch = Object.assign({}, base, {
-		browsers: ['Firefox'],
-		autoWatch: false,
-		singleRun: true
-	});
+cfg.plugins.push('karma-firefox-launcher');
 
-	patch.plugins.push('karma-firefox-launcher');
-
-	config.set(patch);
-
-};
+module.exports = config => config.set(cfg);

@@ -1,5 +1,5 @@
 const webpack = require('webpack');
-const {PATHS} = require('./build');
+const {PATHS, CONFIG} = require('./build');
 
 const HtmlPlugin = require('html-webpack-plugin');
 const CleanPlugin = require('clean-webpack-plugin');
@@ -7,9 +7,9 @@ const ChunkPlugin = webpack.optimize.CommonsChunkPlugin;
 const autoprefixer = require('autoprefixer');
 
 const {SRC, DIST, ROOT} = PATHS;
-const PUBLIC = '/';
+const {PUBLIC_PATH} = CONFIG;
 
-let cfg = {
+const cfg = {
 	context: SRC,
 	entry: {
 		vendor: './vendor.js',
@@ -17,12 +17,12 @@ let cfg = {
 	},
 	output: {
 		path: DIST,
-		publicPath: PUBLIC
+		publicPath: PUBLIC_PATH
 	},
 	module: {
 		loaders: [{
 			test: /\.js$/,
-			loader: 'babel!eslint',
+			loader: 'ng-annotate!babel!eslint',
 			include: [SRC]
 		}, {
 			test: /\.jade$/,

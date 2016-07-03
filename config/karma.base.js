@@ -1,37 +1,24 @@
-const {CONFIG, PATHS} = require('./build');
-const webpackConfig = require('./webpack.base');
-
-delete webpackConfig.entry;
-webpackConfig.plugins = [];
+const {CONFIG, PATHS, utils} = require('./build');
+const webpackConfig = require('./webpack.test');
 
 const {KARMA_PORT} = CONFIG;
 const {ROOT} = PATHS;
 
-const UNIT_TEST_BLOB = 'test/unit/{index,**/*}.js';
-const UNIT_SRC_BLOB = 'src/**/*.unit.js';
-
-module.exports = {
+const cfg = {
 	files: [
-		{pattern: 'dist/vendor*.js'
-	}, {
-		pattern: 'dist/main*.js'
-	}, {
-		pattern: UNIT_TEST_BLOB,
-		watched: false,
-		included: true,
-		served: true
-	}, {
-		pattern: UNIT_SRC_BLOB,
-		watched: false,
-		included: true,
-		served: true
-	}],
+		utils.root('dist/vendor*.{js,css}'),
+		utils.root('dist/main*.{js,css}'),
+		utils.fixOSX('test/unit/index.js'),
+		utils.fixOSX('test/unit/**/*.js'),
+		utils.fixOSX('src/**/*.{unit,spec}.js')
+	],
 	preprocessors: {
-		[UNIT_TEST_BLOB]: ['webpack'],
-		[UNIT_SRC_BLOB]: ['webpack']
+		'{src,test}/**/*': ['webpack']
 	},
 	webpack: webpackConfig,
-	webpackMiddleware: {noInfo: true},
+	webpackMiddleware: {
+		noInfo: true
+	},
 	port: KARMA_PORT,
 	basePath: ROOT,
 	colors: true,
@@ -41,8 +28,9 @@ module.exports = {
 		'karma-chai',
 		'karma-mocha',
 		'karma-webpack',
-		'karma-jasmine',
 		'karma-mocha-reporter'
 	]
 
 };
+
+module.exports = cfg;
