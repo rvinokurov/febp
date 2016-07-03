@@ -15,6 +15,11 @@ const cfg = {
 	maxSessions: 1,
 	capabilities: {
 		browserName: 'chrome'
+	},
+	onPrepare () {
+		require('babel-register')({
+			presets: ['es2015']
+		});
 	}
 };
 

@@ -1,5 +1,5 @@
 describe('Fake unit test', () => {
 	it('must be ok', () => {
-		expect(true).to.be.true;
+		expect(123).to.equal(123);
 	});
 });
