@@ -6,6 +6,7 @@ node_js: 6
 
 install:
   - npm install
+  - npm run wd:update
 
 before_script:
   - export DISPLAY=:99.0
