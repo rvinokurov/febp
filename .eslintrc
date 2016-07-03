@@ -3,10 +3,13 @@
   "parser": "babel-eslint",
   "env": {
     "browser": true,
+    "mocha": true,
     "node": true
   },
   "globals": {
-    "angular": true
+    "angular": true,
+    "expect": true,
+    "System": true
   },
   "rules": {
     "no-console": 0,

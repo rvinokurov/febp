@@ -16,7 +16,7 @@ let cfg = {
 	module: {
 		loaders: [{
 			test: /\.styl$/,
-			loader: 'style!css?sourceMap!stylus',
+			loader: 'style!css!postcss!stylus',
 			include: [SRC]
 		}]
 	}

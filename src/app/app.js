@@ -1,5 +1,4 @@
-require('./app.styl');
+import './app.styl';
 
 angular
-	.module('app', [])
-	.run(() => console.log('=)'));
+	.module('app', ['vendor']);

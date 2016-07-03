@@ -5,6 +5,8 @@ const {PATHS} = require('./build');
 
 const ExtractPlugin = require('extract-text-webpack-plugin');
 const NoErrorsPlugin = webpack.NoErrorsPlugin;
+const LoaderOptionsPlugin = webpack.LoaderOptionsPlugin;
+const DedupePlugin = webpack.optimize.DedupePlugin;
 const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 
 const {SRC} = PATHS;
@@ -21,14 +23,19 @@ let cfg = {
 	module: {
 		loaders: [{
 			test: /\.styl$/,
-			loader: ExtractPlugin.extract('css?sourceMap!stylus'),
+			loader: ExtractPlugin.extract('css!postcss!stylus'),
 			include: [SRC]
 		}]
 	},
 	plugins: [
 		new ExtractPlugin('[name]-[contenthash].css'),
+		new NoErrorsPlugin(),
+		new DedupePlugin(),
 		new UglifyJsPlugin(),
-		new NoErrorsPlugin()
+		new LoaderOptionsPlugin({
+			minimize: true,
+			debug: false
+		})
 	]
 };
 

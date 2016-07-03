@@ -1,1 +1,4 @@
-require('angular');
+import angular from 'angular';
+
+angular
+	.module('vendor', []);
