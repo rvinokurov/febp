@@ -6,8 +6,8 @@ const {ROOT} = PATHS;
 
 const cfg = {
 	files: [
-		utils.root('dist/vendor*.{js,css}'),
-		utils.root('dist/main*.{js,css}'),
+		'dist/vendor*.{js,css}',
+		'dist/main*.{js,css}',
 		utils.fixOSX('test/unit/index.js'),
 		utils.fixOSX('test/unit/**/*.js'),
 		utils.fixOSX('src/**/*.{unit,spec}.js')
