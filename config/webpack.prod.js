@@ -5,7 +5,6 @@ const {PATHS} = require('./build');
 
 const ExtractPlugin = require('extract-text-webpack-plugin');
 const NoErrorsPlugin = webpack.NoErrorsPlugin;
-const LoaderOptionsPlugin = webpack.LoaderOptionsPlugin;
 const DedupePlugin = webpack.optimize.DedupePlugin;
 const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 
@@ -31,11 +30,7 @@ const cfg = {
 		new ExtractPlugin('[name]-[contenthash].css'),
 		new NoErrorsPlugin(),
 		new DedupePlugin(),
-		new UglifyJsPlugin(),
-		new LoaderOptionsPlugin({
-			minimize: true,
-			debug: false
-		})
+		new UglifyJsPlugin()
 	]
 };
 
