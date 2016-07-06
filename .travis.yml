@@ -16,3 +16,4 @@ script:
   - npm run build
   - npm run test:unit
   - npm run coverage
+  - cat ./coverage/lcov.info | ./node_modules/.bin/coveralls

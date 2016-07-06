@@ -61,6 +61,7 @@
     "babel-register": "6.9.0",
     "browser-sync": "2.13.0",
     "chai": "3.5.0",
+    "coveralls": "2.11.9",
     "istanbul": "0.4.4",
     "jasmine": "2.4.1",
     "karma": "1.1.0",
