@@ -16,6 +16,7 @@
     "test:e2e": "protractor config/protractor.js",
     "test:unit": "karma start config/karma.prod.js",
     "test:unit:dev": "karma start config/karma.dev.js",
+    "coverage": "istanbul check-coverage --statements 83 --branches 74 --functions 100 --lines 100",
     "wd": "webdriver-manager start",
     "wd:update": "webdriver-manager update"
   },
@@ -56,13 +57,16 @@
     "webpack-validator": "2.2.2"
   },
   "devDependencies": {
+    "babel-plugin-__coverage__": "11.0.0",
     "babel-register": "6.9.0",
     "browser-sync": "2.13.0",
     "chai": "3.5.0",
+    "istanbul": "0.4.4",
     "jasmine": "2.4.1",
     "karma": "1.1.0",
     "karma-chai": "0.1.0",
     "karma-chrome-launcher": "1.0.1",
+    "karma-coverage": "1.0.0",
     "karma-firefox-launcher": "1.0.0",
     "karma-jasmine": "1.0.2",
     "karma-mocha": "1.1.1",

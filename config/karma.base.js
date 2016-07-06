@@ -1,3 +1,5 @@
+process.env.BABEL_ENV = 'test';
+
 const {CONFIG, PATHS, utils} = require('./build');
 const webpackConfig = require('./webpack.test');
 
@@ -22,14 +24,22 @@ const cfg = {
 	port: KARMA_PORT,
 	basePath: ROOT,
 	colors: true,
-	reporters: ['mocha'],
+	reporters: ['mocha', 'coverage'],
 	frameworks: ['mocha', 'chai'],
 	plugins: [
 		'karma-chai',
 		'karma-mocha',
 		'karma-webpack',
+		'karma-coverage',
 		'karma-mocha-reporter'
-	]
+	],
+	coverageReporter: {
+		reporters: [
+			{type: 'lcov', dir: 'coverage/', subdir: '.'},
+			{type: 'json', dir: 'coverage/', subdir: '.'},
+			{type: 'text-summary'}
+		]
+	}
 
 };
 

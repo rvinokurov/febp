@@ -7,5 +7,6 @@
 dist/
 docs/
 typings/
+coverage/
 node_modules/
 bower_components/

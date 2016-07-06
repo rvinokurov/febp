@@ -1,4 +1,3 @@
-import angular from 'angular';
+import 'angular';
 
-angular
-	.module('vendor', []);
+angular.module('vendor', []);

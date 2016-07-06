@@ -1,1 +1,1 @@
-import './app/app';
+angular.module('app', ['vendor']);
