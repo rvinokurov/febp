@@ -1,6 +1,6 @@
+const baseConfig = require('./webpack.base');
 const webpack = require('webpack');
 const merge = require('webpack-merge');
-const base = require('./webpack.base');
 const {PATHS} = require('./build');
 
 const ExtractPlugin = require('extract-text-webpack-plugin');
@@ -34,4 +34,4 @@ const cfg = {
 	]
 };
 
-module.exports = merge(base, cfg);
+module.exports = merge(baseConfig, cfg);

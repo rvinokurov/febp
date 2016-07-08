@@ -1,5 +1,5 @@
+const baseConfig = require('./webpack.base');
 const merge = require('webpack-merge');
-const base = require('./webpack.base');
 
 const cfg = {
 	entry: {},
@@ -7,4 +7,4 @@ const cfg = {
 	debug: false
 };
 
-module.exports = merge(base, cfg);
+module.exports = merge(baseConfig, cfg);

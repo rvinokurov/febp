@@ -1,5 +1,5 @@
+const baseConfig = require('./webpack.base');
 const merge = require('webpack-merge');
-const base = require('./webpack.base');
 const {PATHS} = require('./build');
 
 const {SRC} = PATHS;
@@ -22,4 +22,4 @@ const cfg = {
 	}
 };
 
-module.exports = merge(base, cfg);
+module.exports = merge(baseConfig, cfg);

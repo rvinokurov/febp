@@ -1,13 +1,13 @@
 const webpack = require('webpack');
-const {CONFIG, PATHS} = require('./build');
+const {CONFIG, PATHS, utils} = require('./build');
 
 const HtmlPlugin = require('html-webpack-plugin');
 const CleanPlugin = require('clean-webpack-plugin');
 const ChunkPlugin = webpack.optimize.CommonsChunkPlugin;
 const autoprefixer = require('autoprefixer');
 
-const {PUBLIC_PATH} = CONFIG;
-const {SRC, DIST, ROOT} = PATHS;
+const {PUBLIC_PATH, ASSETS_LIMIT} = CONFIG;
+const {ROOT, SRC, DIST, PAGES} = PATHS;
 
 const cfg = {
 	context: SRC,
@@ -19,6 +19,12 @@ const cfg = {
 		path: DIST,
 		publicPath: PUBLIC_PATH
 	},
+	resolve: {
+		extensions: ['', '.js', '.json'],
+		alias: {
+			assets: utils.src('assets')
+		}
+	},
 	module: {
 		loaders: [{
 			test: /\.js$/,
@@ -26,8 +32,16 @@ const cfg = {
 			include: [SRC]
 		}, {
 			test: /\.jade$/,
-			loader: 'jade',
-			include: [SRC]
+			loader: 'jade?pretty=true',
+			include: [PAGES]
+		}, {
+			test: /\.jade$/,
+			loader: 'ng-cache?prefix=tpl/[dir]/[dir]!jade-html',
+			include: [SRC],
+			exclude: [PAGES]
+		}, {
+			test: /\.(svg|png|jpg|gif|eot|ttf|woff|woff2)$/,
+			loader: `url?limit=${ASSETS_LIMIT}&name=[name]-[hash].[ext]`
 		}]
 	},
 	postcss: [

@@ -1,8 +1,10 @@
-html(
-	ng-app="app"
-	ng-strict-di
-	)
+html(ng-app="app" ng-strict-di)
+	
 	head
-		title App
+		
+		title Mamka
+		link(rel="icon" href=require("assets/favicon.png"))
+		
 	body
-		h1 App
+		
+		div(ng-include="'tpl/src/app/app.jade'")
