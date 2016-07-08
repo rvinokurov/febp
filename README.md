@@ -95,11 +95,14 @@ npm run test
 npm run serve
 ```
 
-## TODO
-
-- [ ] `babel-preset-es2015-webpack` adds [tree shaking](http://www.2ality.com/2015/12/webpack-tree-shaking.html) features, but [doesn't works](https://github.com/olov/ng-annotate/issues/245) with `ng-annotate`.
+## Webpack 2
 - [ ] HMR (`webpack-dev-server@2.1.0-beta.0`)
+- [ ] `babel-preset-es2015-webpack` adds [tree shaking](http://www.2ality.com/2015/12/webpack-tree-shaking.html) features, but [doesn't works](https://github.com/olov/ng-annotate/issues/245) with `ng-annotate`.
 - [ ] source-maps in production/unit/e2e with (`webpack@2.1.0-beta.15`)
-- [ ] e2e in travis
 - [ ] `SystemJS`
 - [ ] `LoaderOptionsPlugin`
+
+## TODO
+- [ ] e2e watch mode
+- [ ] e2e in travis
+- [ ] e2e in Sauce Labs
