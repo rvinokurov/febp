@@ -12,7 +12,8 @@ const cfg = {
 		'dist/main*.{js,css}',
 		utils.fixOSX('test/unit/index.js'),
 		utils.fixOSX('test/unit/**/*.js'),
-		utils.fixOSX('src/**/*.{unit,spec}.js')
+		utils.fixOSX('src/**/*.unit.js'),
+		utils.fixOSX('src/**/*.spec.js')
 	],
 	preprocessors: {
 		'{src,test}/**/*': ['webpack']
