@@ -25,10 +25,9 @@ const cfg = {
 	basePath: ROOT,
 	colors: true,
 	reporters: ['mocha', 'coverage'],
-	frameworks: ['mocha', 'chai'],
+	frameworks: ['jasmine'],
 	plugins: [
-		'karma-chai',
-		'karma-mocha',
+		'karma-jasmine',
 		'karma-webpack',
 		'karma-coverage',
 		'karma-mocha-reporter'

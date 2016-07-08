@@ -55,6 +55,14 @@ test/e2e/**/*.js
 src/**/*.e2e.js
 ```
 
+## Coverage
+
+Add your own settings to `coverage:check` script
+
+```
+istanbul check-coverage --statements 100 --branches 75 --functions 75 --lines 75
+```
+
 ## Development workflow
 
 Incremental build + unit tests

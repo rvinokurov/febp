@@ -13,10 +13,11 @@
     "build": "webpack --config config/webpack.prod.js",
     "build:dev": "webpack --config config/webpack.dev.js",
     "test": "npm-run-all test:unit coverage:*",
-    "test:e2e": "protractor config/protractor.js",
+    "test:e2e": "protractor config/protractor.prod.js",
+    "test:e2e:dev": "protractor config/protractor.dev.js",
     "test:unit": "karma start config/karma.prod.js",
     "test:unit:dev": "karma start config/karma.dev.js",
-    "coverage:check": "istanbul check-coverage --statements 83 --branches 74 --functions 100 --lines 100",
+    "coverage:check": "istanbul check-coverage",
     "coverage:report": "cat ./coverage/lcov.info | coveralls",
     "webdriver": "webdriver-manager start",
     "webdriver:update": "webdriver-manager update"

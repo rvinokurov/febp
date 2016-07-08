@@ -1,1 +1,2 @@
-angular.module('app', ['vendor']);
+angular
+	.module('app', ['vendor']);
