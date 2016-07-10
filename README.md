@@ -64,6 +64,7 @@ new HtmlPlugin({
 ## Assets
 
 - `url-loader`
+- `file-loader`
 
 Usage in JS:
 
@@ -98,7 +99,6 @@ img(src=require("assets/logo.png"))
 ```
 test/unit/index.js
 test/unit/**/*.js
-src/**/*.unit.js
 src/**/*.spec.js
 ```
 

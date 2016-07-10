@@ -9,7 +9,7 @@
   "globals": {
     "angular": true,
     "expect": true,
-    "System": true
+    "inject": true
   },
   "rules": {
     "no-console": 0,

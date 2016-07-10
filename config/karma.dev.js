@@ -2,8 +2,9 @@ const baseConfig = require('./karma.base');
 
 const cfg = Object.assign({}, baseConfig, {
 	browsers: ['Chrome'],
+	singleRun: false,
 	autoWatch: true,
-	singleRun: false
+	autoWatchBatchDelay: 250
 });
 
 cfg.plugins.push('karma-chrome-launcher');

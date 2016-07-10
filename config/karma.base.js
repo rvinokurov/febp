@@ -7,23 +7,21 @@ const {KARMA_PORT} = CONFIG;
 const {ROOT} = PATHS;
 
 const cfg = {
+	port: KARMA_PORT,
+	basePath: ROOT,
 	files: [
 		'dist/vendor*.{js,css}',
 		'dist/main*.{js,css}',
-		utils.fixOSX('test/unit/index.js'),
-		utils.fixOSX('test/unit/**/*.js'),
-		utils.fixOSX('src/**/*.unit.js'),
-		utils.fixOSX('src/**/*.spec.js')
+		utils.fixOSX('test/unit/index.js')
 	],
 	preprocessors: {
-		'{src,test}/**/*': ['webpack']
+		'test/unit/index.js': ['webpack']
 	},
 	webpack: webpackConfig,
 	webpackMiddleware: {
 		noInfo: true
 	},
-	port: KARMA_PORT,
-	basePath: ROOT,
+	captureTimeout: 60000,
 	colors: true,
 	reporters: ['mocha', 'coverage'],
 	frameworks: ['jasmine'],
@@ -40,7 +38,6 @@ const cfg = {
 			{type: 'text-summary'}
 		]
 	}
-
 };
 
 module.exports = cfg;

@@ -3,8 +3,7 @@ const merge = require('webpack-merge');
 
 const cfg = {
 	entry: {},
-	plugins: [],
-	debug: false
+	plugins: []
 };
 
 module.exports = merge(baseConfig, cfg);

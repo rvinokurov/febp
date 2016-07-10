@@ -1,5 +1,5 @@
-describe('End to end tests', () => {
-	it('must sucks', () => {
-		expect(123).toEqual(123);
+describe('Fake e2e test', () => {
+	it('must be ok', () => {
+		expect(true).toBe(true);
 	});
 });

@@ -7,7 +7,7 @@ const ChunkPlugin = webpack.optimize.CommonsChunkPlugin;
 const autoprefixer = require('autoprefixer');
 
 const {PUBLIC_PATH, ASSETS_LIMIT} = CONFIG;
-const {ROOT, SRC, DIST, PAGES} = PATHS;
+const {ROOT, SRC, DIST, PAGES, TEST} = PATHS;
 
 const cfg = {
 	context: SRC,
@@ -20,6 +20,7 @@ const cfg = {
 		publicPath: PUBLIC_PATH
 	},
 	resolve: {
+		root: ROOT,
 		extensions: ['', '.js', '.json'],
 		alias: {
 			assets: utils.src('assets')
@@ -29,7 +30,7 @@ const cfg = {
 		loaders: [{
 			test: /\.js$/,
 			loader: 'ng-annotate!babel!eslint',
-			include: [SRC]
+			include: [SRC, TEST]
 		}, {
 			test: /\.jade$/,
 			loader: 'jade?pretty=true',

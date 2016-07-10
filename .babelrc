@@ -4,7 +4,10 @@
     "test": {
       "plugins": [
         ["__coverage__", {
-          "ignore": "*.+(unit|stub|spec|mock|e2e).*"
+          "ignore": [
+            "*.+(unit|spec|mock|stub).*",
+            "test/**/*"
+		  ]
 		}]
       ]
 	}
