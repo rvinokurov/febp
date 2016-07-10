@@ -1,7 +1,8 @@
-[![Build Status](https://travis-ci.org/iboozyvoozy/oO.svg)](https://travis-ci.org/iboozyvoozy/oO) [![Coverage Status](https://coveralls.io/repos/github/iboozyvoozy/oO/badge.svg?branch=master)](https://coveralls.io/github/iboozyvoozy/oO?branch=master) [![Dependency Status](https://david-dm.org/iboozyvoozy/oO.svg)](https://david-dm.org/iboozyvoozy/oO) [![devDependency Status](https://david-dm.org/iboozyvoozy/oO/dev-status.svg)](https://david-dm.org/iboozyvoozy/oO#info=devDependencies)
-
-
 # Frontend boilerplate 💩
+
+[![Build Status](https://travis-ci.org/iboozyvoozy/oO.svg)](https://travis-ci.org/iboozyvoozy/oO) [![Coverage Status](https://coveralls.io/repos/github/iboozyvoozy/oO/badge.svg?branch=master)](https://coveralls.io/github/iboozyvoozy/oO?branch=master)
+
+[![Dependency Status](https://david-dm.org/iboozyvoozy/oO.svg)](https://david-dm.org/iboozyvoozy/oO) [![devDependency Status](https://david-dm.org/iboozyvoozy/oO/dev-status.svg)](https://david-dm.org/iboozyvoozy/oO#info=devDependencies)
  
 ## Javascripts
 
