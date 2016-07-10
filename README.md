@@ -169,10 +169,11 @@ npm run test
 ```
 
 ## TODO
-- [ ] coverage all, not only tests + requireds
+- [ ] coverage all, not only tests + imports
 - [ ] e2e watch mode
 - [ ] e2e in travis
 - [ ] e2e in Sauce Labs
+- [ ] source-maps for units
 
 ## Webpack 2
 - [ ] HMR (`webpack-dev-server@2.1.0-beta.0`)
