@@ -19,7 +19,7 @@
     "test:unit": "karma start config/karma.prod.js",
     "test:unit:dev": "karma start config/karma.dev.js",
     "coverage:check": "istanbul check-coverage",
-    "coverage:report": "cat ./coverage/lcov.info | coveralls"
+    "coverage:report": "cat ./reports/coverage/lcov.info | coveralls"
   },
   "dependencies": {
     "angular": "1.5.7",
