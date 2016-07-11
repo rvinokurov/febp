@@ -7,6 +7,7 @@
 dist/
 docs/
 typings/
+reports/
 coverage/
 node_modules/
 bower_components/

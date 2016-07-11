@@ -125,6 +125,11 @@ Add your own settings to `coverage:check` script in `package.json`
 istanbul check-coverage --statements 100 --branches 75 --functions 75 --lines 75
 ```
 
+## Reports
+
+- `localhost:9000/report/unit`
+- `localhost:9000/report/coverage`
+
 ## Servers
 
 Simple express SPA server
@@ -169,6 +174,7 @@ npm run test
 ```
 
 ## TODO
+- [ ] units coverage: import / inject / both ?
 - [ ] coverage all, not only tests + imports
 - [ ] e2e watch mode
 - [ ] e2e in travis

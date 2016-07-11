@@ -15,9 +15,10 @@ exports.CONFIG = {
 exports.PATHS = {
 	ROOT,
 	SRC: root('src'),
-	PAGES: root('src/pages'),
+	DIST: root('dist'),
 	TEST: root('test'),
-	DIST: root('dist')
+	PAGES: root('src/pages'),
+	REPORTS: root('reports')
 };
 
 exports.utils = {

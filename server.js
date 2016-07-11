@@ -4,11 +4,15 @@ const gzip = require('compression');
 const {CONFIG, PATHS} = require('./config/build');
 
 const {APP_PORT} = CONFIG;
-const {DIST} = PATHS;
+const {REPORTS, DIST} = PATHS;
 
 const app = express();
 
 app.use(gzip());
+
+app.use('/report/unit', express.static(`${REPORTS}/karma-html/report`));
+app.use('/report/coverage', express.static(`${REPORTS}/coverage/Lcov-report`));
+
 app.use(express.static(DIST));
 app.use(fallback('index.html', {root: DIST}));
 

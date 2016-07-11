@@ -23,18 +23,23 @@ const cfg = {
 	},
 	captureTimeout: 60000,
 	colors: true,
-	reporters: ['mocha', 'coverage'],
+	reporters: ['mocha', 'coverage', 'html'],
 	frameworks: ['jasmine'],
 	plugins: [
 		'karma-jasmine',
 		'karma-webpack',
 		'karma-coverage',
-		'karma-mocha-reporter'
+		'karma-mocha-reporter',
+		'karma-html-reporter'
 	],
+	htmlReporter: {
+		outputDir: 'reports/karma-html',
+		reportName: 'report'
+	},
 	coverageReporter: {
 		reporters: [
-			{type: 'lcov', dir: 'coverage/', subdir: '.'},
-			{type: 'json', dir: 'coverage/', subdir: '.'},
+			{type: 'lcov', dir: 'reports/coverage/', subdir: '.'},
+			{type: 'json', dir: 'reports/coverage/', subdir: '.'},
 			{type: 'text-summary'}
 		]
 	}
