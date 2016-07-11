@@ -180,6 +180,8 @@ npm run test
 - [ ] e2e in travis
 - [ ] e2e in Sauce Labs
 - [ ] source-maps for units
+- [ ] `dgeni` documentation
+- [ ] semantic release
 
 ## Webpack 2
 - [ ] HMR (`webpack-dev-server@2.1.0-beta.0`)
