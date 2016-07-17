@@ -18,6 +18,9 @@ const cfg = {
 			test: /\.styl$/,
 			loader: 'style!css!postcss!stylus',
 			include: [SRC]
+		}, {
+			test: /\.css$/,
+			loader: 'style!css'
 		}]
 	}
 };

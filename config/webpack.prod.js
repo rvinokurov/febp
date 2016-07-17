@@ -24,6 +24,9 @@ const cfg = {
 			test: /\.styl$/,
 			loader: ExtractPlugin.extract('css!postcss!stylus'),
 			include: [SRC]
+		}, {
+			test: /\.css$/,
+			loader: ExtractPlugin.extract('css')
 		}]
 	},
 	plugins: [
