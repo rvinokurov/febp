@@ -32,7 +32,7 @@
     "clean-webpack-plugin": "0.1.9",
     "compression": "1.6.2",
     "css-loader": "0.23.1",
-    "eslint": "3.0.1",
+    "eslint": "3.1.0",
     "eslint-loader": "1.4.1",
     "exports-loader": "0.6.3",
     "express": "4.14.0",
@@ -57,13 +57,13 @@
     "url-loader": "0.5.7",
     "webpack": "1.13.1",
     "webpack-merge": "0.14.0",
-    "webpack-validator": "2.2.2"
+    "webpack-validator": "2.2.3"
   },
   "devDependencies": {
     "babel-plugin-__coverage__": "11.0.0",
     "babel-register": "6.9.0",
     "browser-sync": "2.13.0",
-    "coveralls": "2.11.9",
+    "coveralls": "2.11.11",
     "istanbul": "0.4.4",
     "jasmine": "2.4.1",
     "karma": "1.1.1",
@@ -74,7 +74,7 @@
     "karma-jasmine": "1.0.2",
     "karma-mocha-reporter": "2.0.4",
     "karma-webpack": "1.7.0",
-    "protractor": "3.3.0"
+    "protractor": "4.0.0"
   },
   "engines": {
     "node": ">= 6",
