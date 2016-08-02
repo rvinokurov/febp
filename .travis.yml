@@ -16,3 +16,6 @@ script:
   - npm run validate
   - npm run build
   - npm run test
+addons:
+  code_climate:
+    repo_token: 8384f582df86e21e51a470faea97703eaf43b3cf719346dc026f38d86d9b000e
