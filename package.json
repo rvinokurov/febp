@@ -1,5 +1,5 @@
 {
-  "name": "mamka",
+  "name": "oO",
   "version": "0.0.0-semantic-released",
   "scripts": {
     "postinstall": "webdriver-manager update",
