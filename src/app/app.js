@@ -1,5 +1,5 @@
 import './app.styl';
-import './app.jade';
+import './app.pug';
 
 angular
 	.module('app', ['vendor']);

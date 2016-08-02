@@ -32,11 +32,11 @@ const cfg = {
 			loader: 'ng-annotate!babel!eslint',
 			include: [SRC, TEST]
 		}, {
-			test: /\.jade$/,
-			loader: 'jade?pretty=true',
+			test: /\.pug$/,
+			loader: 'pug?pretty=true',
 			include: [PAGES]
 		}, {
-			test: /\.jade$/,
+			test: /\.pug/,
 			loader: 'ng-cache?prefix=tpl/[dir]/[dir]!jade-html',
 			include: [SRC],
 			exclude: [PAGES]
@@ -56,7 +56,7 @@ const cfg = {
 		}),
 		new HtmlPlugin({
 			filename: 'index.html',
-			template: 'pages/index.jade'
+			template: 'pages/index.pug'
 		}),
 		new ChunkPlugin({
 			name: 'vendor'
