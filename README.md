@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/iboozyvoozy/oO.svg)](https://travis-ci.org/iboozyvoozy/oO) [![Dependency Status](https://david-dm.org/iboozyvoozy/oO.svg)](https://david-dm.org/iboozyvoozy/oO) [![devDependency Status](https://david-dm.org/iboozyvoozy/oO/dev-status.svg)](https://david-dm.org/iboozyvoozy/oO#info=devDependencies)
 
-[![Code Climate](https://codeclimate.com/github/iboozyvoozy/oO/badges/gpa.svg)](https://codeclimate.com/github/iboozyvoozy/oO) [![Coverage Status](https://coveralls.io/repos/github/iboozyvoozy/oO/badge.svg?branch=master)](https://coveralls.io/github/iboozyvoozy/oO?branch=master)
+[![Code Climate](https://codeclimate.com/github/iboozyvoozy/oO/badges/gpa.svg)](https://codeclimate.com/github/iboozyvoozy/oO) [![Test Coverage](https://codeclimate.com/github/iboozyvoozy/oO/badges/coverage.svg)](https://codeclimate.com/github/iboozyvoozy/oO/coverage)
 
 ## Javascripts
 
@@ -36,29 +36,29 @@ import './reset.styl;
 Importing in JS:
 
 ```
-import template from './tpl.jade';
+import template from './tpl.pug';
 angular.component('foo', {template});
 ```
 
 Importing in DOM:
 
 ```
-import './dir1/dir2/dir3/dir4/tpl.jade';
+import './dir1/dir2/dir3/dir4/tpl.pug';
 ```
 ```
-div(ng-include="'tpl/dir3/dir4/tpl.jade'")
+div(ng-include="'tpl/dir3/dir4/tpl.pug'")
 ```
 
 ## Static pages
 
-- `jade-loader`
+- `pug-loader`
 
 Add new plugin to webpack config:
 
 ```
 new HtmlPlugin({
   filename: '404.html',
-  template: 'pages/error.jade'
+  template: 'pages/error.pug'
 })
 ```
 
@@ -180,8 +180,9 @@ npm run test
 - [ ] e2e in travis
 - [ ] e2e in Sauce Labs
 - [ ] source-maps for units
-- [ ] `dgeni` documentation
-- [ ] semantic release
+- [ ] [dotenv](https://github.com/motdotla/dotenv)
+- [ ] [documentation](https://github.com/angular/dgeni)
+- [ ] [semantic + changelog](https://github.com/commitizen/cz-cli)
 
 ## Webpack 2
 - [ ] HMR (`webpack-dev-server@2.1.0-beta.0`)
