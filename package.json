@@ -1,6 +1,7 @@
 {
   "name": "febp",
   "version": "0.0.0-semantic-release",
+  "description": "Frontend boilerplate",
   "repository": {
     "type": "git",
     "url": "https://github.com/iboozyvoozy/febp.git"
