@@ -10,7 +10,7 @@ cache:
 
 addons:
   code_climate:
-    repo_token: 8384f582df86e21e51a470faea97703eaf43b3cf719346dc026f38d86d9b000e
+    repo_token: 95178807de4a56254afa96ccf1df391644594d5acad6e13d3b90f0430670d3cf
 
 install:
   - npm install
