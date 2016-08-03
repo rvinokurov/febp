@@ -1,6 +1,6 @@
 # Frontend boilerplate 💩
 
-[![Build Status](https://travis-ci.org/iboozyvoozy/febp.svg)](https://travis-ci.org/iboozyvoozy/febp) [![Dependency Status](https://david-dm.org/iboozyvoozy/febp.svg)](https://david-dm.org/iboozyvoozy/febp) [![devDependency Status](https://david-dm.org/iboozyvoozy/febp/dev-status.svg)](https://david-dm.org/iboozyvoozy/febp#info=devDependencies)
+[![NPM version](https://img.shields.io/npm/v/febp.svg)](https://www.npmjs.com/package/febp) [![Build Status](https://travis-ci.org/iboozyvoozy/febp.svg)](https://travis-ci.org/iboozyvoozy/febp) [![Dependency Status](https://david-dm.org/iboozyvoozy/febp.svg)](https://david-dm.org/iboozyvoozy/febp) [![devDependency Status](https://david-dm.org/iboozyvoozy/febp/dev-status.svg)](https://david-dm.org/iboozyvoozy/febp#info=devDependencies)
 
 [![Code Climate](https://codeclimate.com/github/iboozyvoozy/febp/badges/gpa.svg)](https://codeclimate.com/github/iboozyvoozy/febp) [![Test Coverage](https://codeclimate.com/github/iboozyvoozy/febp/badges/coverage.svg)](https://codeclimate.com/github/iboozyvoozy/febp/coverage)
 
@@ -182,7 +182,6 @@ npm run test
 - [ ] source-maps for units
 - [ ] [dotenv](https://github.com/motdotla/dotenv)
 - [ ] [documentation](https://github.com/angular/dgeni)
-- [ ] [semantic + changelog](https://github.com/commitizen/cz-cli)
 
 ## Webpack 2
 - [ ] HMR (`webpack-dev-server@2.1.0-beta.0`)
