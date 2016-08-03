@@ -1,6 +1,10 @@
 {
-  "name": "oO",
-  "version": "0.0.0-semantic-released",
+  "name": "febp",
+  "version": "0.0.0-semantic-release",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iboozyvoozy/febp.git"
+  },
   "scripts": {
     "postinstall": "webdriver-manager update",
     "validate": "npm-run-all --parallel validate:* lint",

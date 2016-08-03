@@ -1,8 +1,8 @@
 # Frontend boilerplate 💩
 
-[![Build Status](https://travis-ci.org/iboozyvoozy/oO.svg)](https://travis-ci.org/iboozyvoozy/oO) [![Dependency Status](https://david-dm.org/iboozyvoozy/oO.svg)](https://david-dm.org/iboozyvoozy/oO) [![devDependency Status](https://david-dm.org/iboozyvoozy/oO/dev-status.svg)](https://david-dm.org/iboozyvoozy/oO#info=devDependencies)
+[![Build Status](https://travis-ci.org/iboozyvoozy/febp.svg)](https://travis-ci.org/iboozyvoozy/febp) [![Dependency Status](https://david-dm.org/iboozyvoozy/febp.svg)](https://david-dm.org/iboozyvoozy/febp) [![devDependency Status](https://david-dm.org/iboozyvoozy/febp/dev-status.svg)](https://david-dm.org/iboozyvoozy/febp#info=devDependencies)
 
-[![Code Climate](https://codeclimate.com/github/iboozyvoozy/oO/badges/gpa.svg)](https://codeclimate.com/github/iboozyvoozy/oO) [![Test Coverage](https://codeclimate.com/github/iboozyvoozy/oO/badges/coverage.svg)](https://codeclimate.com/github/iboozyvoozy/oO/coverage)
+[![Code Climate](https://codeclimate.com/github/iboozyvoozy/febp/badges/gpa.svg)](https://codeclimate.com/github/iboozyvoozy/febp) [![Test Coverage](https://codeclimate.com/github/iboozyvoozy/febp/badges/coverage.svg)](https://codeclimate.com/github/iboozyvoozy/febp/coverage)
 
 ## Javascripts
 
