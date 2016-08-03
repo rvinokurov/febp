@@ -1,5 +1,6 @@
 .DS_Store
 .idea
+*.env
 *.log
 *.sublime-project
 *.sublime-workspace
