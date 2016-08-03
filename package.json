@@ -89,8 +89,10 @@
     "karma-webpack": "1.7.0",
     "protractor": "4.0.2"
   },
-  "czConfig": {
-    "path": "node_modules/cz-conventional-changelog"
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   },
   "engines": {
     "node": ">= 6",
