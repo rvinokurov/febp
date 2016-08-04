@@ -1,8 +1,21 @@
 # Frontend boilerplate 💩
 
-[![NPM version](https://img.shields.io/npm/v/febp.svg)](https://www.npmjs.com/package/febp) [![Dependency Status](https://david-dm.org/iboozyvoozy/febp.svg)](https://david-dm.org/iboozyvoozy/febp) [![devDependency Status](https://david-dm.org/iboozyvoozy/febp/dev-status.svg)](https://david-dm.org/iboozyvoozy/febp#info=devDependencies)
+[![NPM version][npm-img]][npm-url] [![Dependency Status][dm-img]][dm-url] [![devDependency Status][dm-dev-img]][dm-dev-url]
 
-[![Build Status](https://travis-ci.org/iboozyvoozy/febp.svg)](https://travis-ci.org/iboozyvoozy/febp) [![Code Climate](https://codeclimate.com/github/iboozyvoozy/febp/badges/gpa.svg)](https://codeclimate.com/github/iboozyvoozy/febp) [![Test Coverage](https://codeclimate.com/github/iboozyvoozy/febp/badges/coverage.svg)](https://codeclimate.com/github/iboozyvoozy/febp/coverage)
+[![Build Status][travis-img]][travis-url] [![Code Climate][climate-img]][climate-url] [![Test Coverage][coverage-img]][coverage-url]
+
+[npm-img]: https://badge.fury.io/js/febp.svg
+[npm-url]: https://www.npmjs.com/package/febp
+[dm-img]: https://david-dm.org/iboozyvoozy/febp.svg
+[dm-url]: https://david-dm.org/iboozyvoozy/febp
+[dm-dev-img]: https://david-dm.org/iboozyvoozy/febp/dev-status.svg
+[dm-dev-url]: https://david-dm.org/iboozyvoozy/febp#info=devDependencies
+[travis-img]: https://travis-ci.org/iboozyvoozy/febp.svg
+[travis-url]: https://travis-ci.org/iboozyvoozy/febp
+[climate-img]: https://codeclimate.com/github/iboozyvoozy/febp/badges/gpa.svg
+[climate-url]: https://codeclimate.com/github/iboozyvoozy/febp
+[coverage-img]: https://codeclimate.com/github/iboozyvoozy/febp/badges/coverage.svg
+[coverage-url]: https://codeclimate.com/github/iboozyvoozy/febp/coverage
 
 ## Javascripts
 
