@@ -217,7 +217,6 @@ API_TOKEN=secret
 - [ ] e2e in travis
 - [ ] e2e in Sauce Labs
 - [ ] source-maps for units
-- [ ] [dotenv](https://github.com/motdotla/dotenv)
 - [ ] [documentation](https://github.com/angular/dgeni)
 
 ## Webpack 2
