@@ -24,8 +24,15 @@ const cfg = {
 		publicPath: PUBLIC_PATH
 	},
 	resolve: {
-		root: ROOT,
-		extensions: ['', '.js', '.json'],
+		root: [
+			ROOT,
+			utils.src('app'),
+		],
+		extensions: [
+			'',
+			'.js',
+			'.json'
+		],
 		alias: {
 			assets: utils.src('assets')
 		}
