@@ -2,7 +2,9 @@
 
 [![NPM version][npm-img]][npm-url] [![Dependency Status][dm-img]][dm-url] [![devDependency Status][dm-dev-img]][dm-dev-url]
 
-[![Build Status][travis-img]][travis-url] [![Code Climate][climate-img]][climate-url] [![Test Coverage][coverage-img]][coverage-url]
+[![Build Status][travis-img]][travis-url] [![Test Coverage][coverage-img]][coverage-url] [![Code Climate][climate-img]][climate-url] [![Code Climate Issues][climate-issues-img]][climate-issues-url]
+
+[![Semantic Release][semantic-img]][semantic-url]
 
 [npm-img]: https://badge.fury.io/js/febp.svg
 [npm-url]: https://www.npmjs.com/package/febp
@@ -12,11 +14,14 @@
 [dm-dev-url]: https://david-dm.org/iboozyvoozy/febp#info=devDependencies
 [travis-img]: https://travis-ci.org/iboozyvoozy/febp.svg
 [travis-url]: https://travis-ci.org/iboozyvoozy/febp
-[climate-img]: https://codeclimate.com/github/iboozyvoozy/febp/badges/gpa.svg
-[climate-url]: https://codeclimate.com/github/iboozyvoozy/febp
 [coverage-img]: https://codeclimate.com/github/iboozyvoozy/febp/badges/coverage.svg
 [coverage-url]: https://codeclimate.com/github/iboozyvoozy/febp/coverage
-
+[climate-img]: https://codeclimate.com/github/iboozyvoozy/febp/badges/gpa.svg
+[climate-url]: https://codeclimate.com/github/iboozyvoozy/febp
+[climate-issues-img]: https://codeclimate.com/github/iboozyvoozy/febp/badges/issue_count.svg
+[climate-issues-url]: https://codeclimate.com/github/iboozyvoozy/febp
+[semantic-img]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
+[semantic-url]: https://github.com/semantic-release/semantic-release
 
 ## Javascripts
 
