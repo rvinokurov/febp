@@ -1,6 +1,6 @@
 {
   "name": "febp",
-  "version": "0.0.0-semantic-release",
+  "version": "0.0.0-semver",
   "description": "Frontend boilerplate",
   "repository": {
     "type": "git",
