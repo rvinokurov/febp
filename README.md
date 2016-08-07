@@ -187,6 +187,29 @@ npm run build
 npm run test
 ```
 
+## Environment
+
+Create local version of .env file
+
+```
+mv .env.example .env 
+```
+
+For provide some env variables to client build via [EnvironmentPlugin](https://webpack.github.io/docs/list-of-plugins.html#environmentplugin),
+
+add variables names to `config/build.js`
+
+```
+CLIENT_ENV_VARS: ['API_ENDPOINT', 'API_TOKEN']
+```
+
+and values to `.env` file:
+
+```
+API_ENDPOINT=https://api.site.com
+API_TOKEN=secret
+```
+
 ## TODO
 - [ ] units coverage: import / inject / both ?
 - [ ] coverage all, not only tests + imports
