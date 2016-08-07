@@ -1,13 +1,17 @@
+const requireEnv = require('require-environment-variables');
 const webpack = require('webpack');
 const {CONFIG, PATHS, utils} = require('./build');
 
 const HtmlPlugin = require('html-webpack-plugin');
 const CleanPlugin = require('clean-webpack-plugin');
+const EnvPlugin = webpack.EnvironmentPlugin;
 const ChunkPlugin = webpack.optimize.CommonsChunkPlugin;
 const autoprefixer = require('autoprefixer');
 
-const {PUBLIC_PATH, ASSETS_LIMIT} = CONFIG;
+const {PUBLIC_PATH, ASSETS_LIMIT, CLIENT_ENV_VARS} = CONFIG;
 const {ROOT, SRC, DIST, PAGES, TEST} = PATHS;
+
+requireEnv(CLIENT_ENV_VARS);
 
 const cfg = {
 	context: SRC,
@@ -60,7 +64,8 @@ const cfg = {
 		}),
 		new ChunkPlugin({
 			name: 'vendor'
-		})
+		}),
+		new EnvPlugin(CLIENT_ENV_VARS)
 	]
 };
 
