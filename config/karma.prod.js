@@ -2,6 +2,7 @@ const baseConfig = require('./karma.base');
 
 const cfg = Object.assign({}, baseConfig, {
 	browsers: ['Chrome', 'Firefox'],
+	concurrency: 1,
 	singleRun: true,
 	autoWatch: false
 });
