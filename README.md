@@ -12,6 +12,7 @@
 [dm-url]: https://david-dm.org/iboozyvoozy/febp
 [dm-dev-img]: https://david-dm.org/iboozyvoozy/febp/dev-status.svg
 [dm-dev-url]: https://david-dm.org/iboozyvoozy/febp#info=devDependencies
+
 [travis-img]: https://travis-ci.org/iboozyvoozy/febp.svg
 [travis-url]: https://travis-ci.org/iboozyvoozy/febp
 [coverage-img]: https://codeclimate.com/github/iboozyvoozy/febp/badges/coverage.svg
