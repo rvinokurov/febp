@@ -100,5 +100,11 @@
   "engines": {
     "node": ">= 6",
     "npm": ">= 3"
-  }
+  },
+  "keywords": [
+    "frontend",
+    "angular",
+    "webpack",
+    "babel"
+  ]
 }
