@@ -137,7 +137,6 @@ src/**/*.e2e.js
 ## Coverage
 
 - `istanbul`
-- [`coveralls`](https://coveralls.io)
 
 Add your own settings to `coverage:check` script in `package.json`
 
