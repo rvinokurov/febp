@@ -81,7 +81,7 @@
     "coveralls": "2.11.12",
     "istanbul": "0.4.4",
     "jasmine": "2.4.1",
-    "karma": "1.1.2",
+    "karma": "1.2.0",
     "karma-chrome-launcher": "1.0.1",
     "karma-coverage": "1.1.1",
     "karma-firefox-launcher": "1.0.0",
@@ -89,8 +89,8 @@
     "karma-jasmine": "1.0.2",
     "karma-mocha-reporter": "2.1.0",
     "karma-phantomjs-launcher": "1.0.1",
-    "karma-webpack": "1.7.0",
-    "protractor": "4.0.2"
+    "karma-webpack": "1.8.0",
+    "protractor": "4.0.3"
   },
   "config": {
     "commitizen": {
