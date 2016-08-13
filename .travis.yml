@@ -29,7 +29,3 @@ script:
 
 after_success:
   - npm run release
-
-branches:
-  only:
-    - master
