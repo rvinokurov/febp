@@ -163,6 +163,12 @@ Livereload browser-sync proxy-server
 npm run serve:dev
 ```
 
+API mocks server
+
+```
+npm run serve:mocks
+```
+
 Selenium server for protractor
 
 ```
