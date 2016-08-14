@@ -10,11 +10,12 @@ const cfg = {
 	port: KARMA_PORT,
 	basePath: ROOT,
 	files: [
-		'dist/vendor*.{js,css}',
-		'dist/main*.{js,css}',
+		utils.fixOSX('src/vendor.js'),
+		utils.fixOSX('src/main.js'),
 		utils.fixOSX('test/unit/index.js')
 	],
 	preprocessors: {
+		'src/*': ['webpack'],
 		'test/unit/index.js': ['webpack']
 	},
 	webpack: webpackConfig,

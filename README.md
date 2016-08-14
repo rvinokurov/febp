@@ -216,8 +216,6 @@ API_TOKEN=secret
 ```
 
 ## TODO
-- [ ] units coverage: import / inject / both ?
-- [ ] coverage all, not only tests + imports
 - [ ] e2e watch mode
 - [ ] e2e in travis
 - [ ] e2e in Sauce Labs
