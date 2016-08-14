@@ -157,13 +157,13 @@ Simple express SPA server
 npm run serve
 ```
 
-Livereload browser-sync proxy-server
+Livereload proxy-server ([browser-sync](https://github.com/BrowserSync/browser-sync))
 
 ```
 npm run serve:dev
 ```
 
-API mocks server
+API mocks server ([json-server](https://github.com/typicode/json-server))
 
 ```
 npm run serve:mocks
